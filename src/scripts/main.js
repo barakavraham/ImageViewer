@@ -26,7 +26,7 @@ import ViewPort from "./ViewPort.class.js";
         document.querySelector(".expand").addEventListener("click", () => {
             $container.style.width = '99%';
             $container.style.height = '93vh';
-            $zoomContainer.style.width = '99%'
+            $zoomContainer.style.width = '99%';
             $expand.style.display = "none";
             $collapse.style.display = "inline-block";
         })
