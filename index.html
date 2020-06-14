@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SVG Viewer</title>
+        <link rel="stylesheet" href="./src/styles/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+        <script defer type="module" src="./src/scripts/main.js"></script>
+    </head>
+    <body>
+        <div id="zoom-tools-container">
+            <i class="fas fa-search-plus fa-2x zoom-in zoom"></i>
+            <i class="fas fa-redo-alt fa-2x zoom-reset zoom"></i>
+            <i class="fas fa-search-minus fa-2x zoom-out zoom"></i>
+            <i class="fas fa-expand-arrows-alt fa-2x expand"></i>
+            <i class="fas fa-compress-arrows-alt fa-2x collapse" style="display: none;"></i>
+        </div>
+        <div class="container"></div>
+        <div id="file-select-container">
+            <input type="file" value="" id="img-file" accept=".png,.svg,.jpeg,.jpg"/>
+        </div>
+        <div class="note">Note: you can press alt + wheelup/wheeldown to resize the image.</div>
+    </body>
+</html>
